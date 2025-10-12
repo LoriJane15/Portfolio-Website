@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  
+  <title>Lori Jumawan</title>
+</head>
+<body>
+  <!-- HOME Section -->
+<div class="home" id="home">
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">LJDJ</div>
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="intro-text">
+      <div class="profile-pic">
+      <img src="src/img/Jane.png" alt="Lori Jane Jumawan">
+    </div>
+      <h5>Hello, </h5>
+      <h1>I'm Lori Jane Jumawan</h1>
+      <p> Passionate and dedicated aspiring IT professional.</p>
+    </div>
+    
+  </header>
+</div>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="about-container">
+    <!-- Profile Image -->
+    <div class="about-img">
+      <img src="src/img/Jane.png" alt="Lori Jane Jumawan">
+    </div>
+
+    <!-- About Content -->
+    <div class="about-content">
+      <h3 class="sub-title">Discover</h3>
+      <h2 class="title">About Me</h2>
+      <p>
+        My name is Lori Jane Jumawan, a Bachelor of Science in Information Technology student at UM Digos College. 
+        Passionate and dedicated in my work, I focus on creating innovative solutions that make a positive impact. 
+        With my skills in mobile, web, and desktop application development, I aspire to grow as a full-fledged IT professional. 
+      </p>
+
+      <!-- Info Grid -->
+      <div class="about-info">
+        <div><strong>Name:</strong> Lori Jane Jumawan</div>
+        <div><strong>Age:</strong> 20</div>
+        <div><strong>Education:</strong> BSIT</div>
+        <div><strong>Phone:</strong> +63 975 238 0234</div>
+        <div><strong>Address:</strong> Matanao,Philippines</div>
+        <div><strong>Email:</strong> jumawanlorijane@gmail.com</div>
+      </div>
+
+      <!-- Button -->
+       <a href="src/files/RESUME-LoriJaneJumawan.pdf" download class="btn-download">Download Resume</a>
+
+      <a href="src/files/RESUME-LoriJaneJumawan.pdf" 
+        class="btn-view" 
+        target="_blank">View Resume</a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Achievements Section -->
+<section class="achievements" id="achievements">
+  <div class="achievements-container">
+
+    <!-- Section Header -->
+    <div class="achievements-header">
+      <h3 class="subtitle">HIGHLIGHTS</h3>
+      <h2 class="title">My Achievements</h2>
+    </div>
+
+    <!-- Left Description -->
+    <div class="achievements-left">
+      <div id="achievement-description">
+        <h4>HTML Essentials</h4>
+        <p>
+          Successfully completed the HTML Essentials course and achieved student-level credentials. The course covered HTML5 fundamentals, including document structure, text formatting, hyperlinks, multimedia integration, forms, and accessibility best practices.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Grid -->
+    <div class="achievements-right">
+      <div class="achievement-card" 
+           onclick="showAchievement('HTML Essentials','Successfully completed the HTML Essentials course offered by Cisco in collaboration with the JS Institute. The program focused on the foundations of HTML5, including document structure, text formatting, hyperlinks, multimedia integration, and form creation. It also emphasized accessibility best practices to ensure inclusive and user-friendly web experiences. This certification demonstrates a solid understanding of the building blocks of web development and serves as a foundation for advancing into more complex front-end technologies.')">
+        <img src="src/img/HTMLcert.png" alt="HTML Certificate">
+      </div>
+
+      <div class="achievement-card" 
+           onclick="showAchievement('CSS Essentials','Successfully completed the CSS Essentials course offered by Cisco in collaboration with the JS Institute. The program focused on the core principles of CSS3, covering styling techniques, layout structures, and responsive web design practices. It also emphasized the importance of accessibility and usability in modern web development.')">
+        <img src="src/img/CSS.png" alt="CSS Certificate">
+      </div>
+
+      <div class="achievement-card" 
+           onclick="showAchievement('JavaScript Essentials 1','Successfully completed the JavaScript Essentials 1 course offered by Cisco in collaboration with the OpenEDG JS Institute. The program covered the fundamentals of JavaScript, including syntax, variables, operators, flow control, functions, and the basics of the data type system. It also emphasized algorithmic thinking, problem analysis through programmatic approaches, and the ability to design, develop, and refine simple interactive programs—establishing a strong foundation for further growth in web development and scripting.')">
+        <img src="src/img/JavaScript.png" alt="JavaScript Certificate">
+      </div>
+    </div>
+  </div>   
+</section>
+
+
+<!-- Projects Section -->
+<section class="projects" id="projects">
+  <div class="projects-container">
+
+    <!-- Section Header -->
+    <div class="projects-header">
+      <h3 class="sub-title">My Works</h3>
+      <h2 class="title">Academic Projects/Activities</h2>
+    </div>
+
+    <!-- Content Rows -->
+    <div class="projects-content">
+      <!-- Project Description (Left) -->
+      <div class="project-description">
+        <h3 id="project-title">SecondLife</h3>
+        <p id="project-text">
+          SecondLife is a mobile app that allows users to donate, trade, or sell secondhand items with ease. 
+          It features quick item uploads, in-app messaging, and a community-driven platform that promotes 
+          sustainability by giving new life to reusable items.
+        </p>
+      </div>
+
+     <!-- Project Slider (Right) -->
+      <div class="project-slider">
+        <button class="arrow left" id="prevBtn">&#10094;</button>
+        <div class="project-media-container" id="project-media-container">
+         
+        </div>
+        <button class="arrow right" id="nextBtn">&#10095;</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    
+    <!-- Contact Header -->
+    <div class="contact-header">
+      <h2 class="title">Let’s Connect</h2>
+      <p class="contact-subtext">
+        Always open to learning, collaborating, and exchanging ideas. <br>
+        Whether it’s about school projects or tech discussions, feel free to reach out.
+      </p>
+    </div>
+
+    <!-- Contact Body -->
+    <div class="contact-container">
+      <!-- Left: Form -->
+     <div class="contact-form">
+        <form action="https://formsubmit.co/jumawanlorijane@gmail.com" method="POST">
+          <div class="form-row">
+            <input type="text" name="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" placeholder="Last Name" required>
+          </div>
+          <div class="form-row">
+            <input type="text" name="phone" placeholder="Phone (optional)">
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <textarea name="message" placeholder="What would you like to collaborate on?" rows="4"></textarea>
+          <button type="submit" class="btn-submit">SEND MESSAGE</button>
+        </form>
+      </div>
+      <!-- Right: Contact Info -->
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p><strong>Email:</strong> jumawanlorijane@gmail.com</p>
+        <p><strong>Phone:</strong> +63 975 238 0234</p>
+        <p><strong>Location:</strong> Matanao, Philippines</p>
+
+        <div class="social-icons">
+          <a href="https://www.instagram.com/lor._.eyy_" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://m.me/lorijumawan.delossantos" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+          <a href="https://www.linkedin.com/in/lori-jane-jumawan-486b25292" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/LoriJane15" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <nav>
+     <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <p>&copy; 2025 Lori Jane Jumawan. All rights reserved.</p>
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
