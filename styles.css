@@ -1,4 +1,4 @@
-/* Reset & Base */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  z-index: 1; /* background layer */
+  z-index: 1; 
 }
 
 /* Navbar */
@@ -72,20 +72,20 @@ nav {
 /* Responsive Navbar */
 @media (max-width: 768px) {
   #nav-links {
-    position: absolute;
-    top: 70px;
-    right: -100%;
-    background: #0b0c10;
+    display: none; 
     flex-direction: column;
     gap: 20px;
+    background: #0b0c10;
     padding: 20px;
+    position: absolute;
+    top: 70px;
+    right: 0;
     width: 200px;
-    text-align: left;
-    transition: right 0.3s ease;
+    border-radius: 8px;
   }
 
   #nav-links.active {
-    right: 0;
+    display: flex;
   }
 
   .menu-toggle {
@@ -96,10 +96,10 @@ nav {
 
 /* Header Section */
 header {
-  flex: 1; /* take remaining space below nav */
+  flex: 1; 
   display: flex;
   flex-direction: column;
-  align-items: center; /* center horizontally */
+  align-items: center; 
   justify-content:start;
   text-align: center;
   padding: 40px 8%;
@@ -117,12 +117,11 @@ header {
   height: 280px;
   border-radius: 50%;
   object-fit: cover;
-  background: transparent; /* remove background color */
-  border: 5px solid #66FCF1; /* solid border */
+  background: transparent; 
+  border: 5px solid #66FCF1; 
   margin-bottom: 30px;
 }
 
-/* Text Styling */
 header h5 {
   font-size: 1.5rem;
   color: #45a29e;
@@ -145,11 +144,11 @@ header p {
 
 /* About Section */
 .about {
-  width: 80%;        /* limit how wide the card grows */
-  min-height: 92vh;        /* card height (adjust as needed) */
-  margin: 80px auto;       /* center horizontally and give top spacing */
+  width: 80%;        
+  min-height: 92vh;        
+  margin: 80px auto;       
   margin-top: -500px;
-  background: #1F2833;     /* card background (visible for radius) */
+  background: #1F2833;     
   padding: 40px;
   color: #c5c6c7;
   position: relative;
@@ -162,7 +161,6 @@ header p {
   overflow: hidden;  
 }
 
-/* inner container holding image + content */
 .about-container {
   width: 80%;
   display: flex;
@@ -173,9 +171,8 @@ header p {
  
 }
 
-/* Image column */
 .about-img {
-  flex: 0 0 300px;       /* fixed column width */
+  flex: 0 0 300px;       
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,11 +188,11 @@ header p {
   background: #c5c6c7;
 }
 
-/* content column */
+
 .about-content {
-  flex: 1 1 500px;      /* grows, shrinks, but prefers at least 500px */
-  max-width: 600px;     /* don’t let it get too wide */
-  padding-left: 40px;   /* space from the left */
+  flex: 1 1 500px;      
+  max-width: 600px;     
+  padding-left: 40px;   
 }
 
 .sub-title { 
@@ -211,8 +208,8 @@ header p {
   font-weight: bold; 
   color: #66FCF1; 
   margin-bottom: 15px;
-  border-bottom: 3px solid #45a29e; /* thicker underline */
-  display: inline-block;            /* keeps underline tight to text */
+  border-bottom: 3px solid #45a29e; 
+  display: inline-block;            
 } 
 
 .about-content p { 
@@ -269,7 +266,7 @@ header p {
     background: #66FCF1; 
     color: #1F2833ff; 
   }
-/* Responsive: stack on narrower screens */
+/* Responsive */
 @media (max-width: 900px) {
   .about {
     width: 92%;
@@ -333,7 +330,7 @@ header p {
   color: #c5c6c7;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* center vertically with images */
+  justify-content: center; 
   text-align: left;
 }
 
@@ -369,7 +366,6 @@ header p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Make all images same size without cropping */
 .achievement-card img {
   width: 100%;
   height: 100%;
@@ -384,7 +380,6 @@ header p {
   width: 280px;
 }
 
-/* Hover effect */
 .achievement-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 24px #45a29e;
@@ -414,7 +409,7 @@ header p {
 .projects {
   width: 100%;
   padding: 80px 40px;
-  background: #1F2838;   /* unified background */
+  background: #1F2838;   
   color: #c5c6c7;
   display: flex;
   justify-content: center;
@@ -446,7 +441,6 @@ header p {
   display: inline-block;
 }
 
-/* Content Layout */
 .projects-content {
   display: flex;
   align-items: center;
@@ -483,7 +477,6 @@ header p {
   margin-right: 40px;
 }
 
-/* Shared container for images & videos */
 .project-media-container {
   width: 100%;
   max-width: 500px;
@@ -496,13 +489,13 @@ header p {
   align-items: center;
   justify-content: center;
 }
-/* Images inside project media */
+/* img inside project media */
 .project-media-container img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 12px;
-  background: #fff; 
+  background: #0000; 
 }
 
 /* Videos inside project media */
@@ -551,15 +544,15 @@ header p {
 /* Contact Section */
 .contact {
   width: 100%;
-  background: #1F2838;   /* same as Projects */
+  background: #1F2838;   
   color: #c5c6c7;
-  padding: 80px 0;       /* space around container */
+  padding: 80px 0;     
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-/* Inner container (card style) */
+
 .contact-inner {
   width: 80%;
   max-width: 1200px;
@@ -719,15 +712,17 @@ footer nav {
   justify-content: center;
 }
 
-footer #nav-links {
+footer nav .footer-nav {
   display: flex;
   gap: 25px;
   list-style: none;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-footer #nav-links li a {
+footer .footer-nav li a {
   text-decoration: none;
   color: #45a29e;
   font-size: 15px;
@@ -735,7 +730,7 @@ footer #nav-links li a {
   font-weight: bold;
 }
 
-footer #nav-links li a:hover {
+footer .footer-nav li a:hover {
   color: #66FCF1;
 }
 /* Footer Text */
@@ -747,8 +742,9 @@ footer p {
 
 /* Responsive Footer */
 @media (max-width: 768px) {
-  footer #nav-links {
-    flex-wrap: wrap;
+  footer nav .footer-nav {
+    justify-content: center;
     gap: 15px;
+    display: flex;
   }
 }
